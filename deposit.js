@@ -10,7 +10,6 @@ document.getElementById('deposit-btn').addEventListener('click',function(){
 // total balance after deposit   
    const balanceDisplayString =document.getElementById('balance').innerText
    const balanceDisplayNumber = parseFloat(balanceDisplayString);
-   const balanceDeposit = depositAmountNumber+balanceDisplayNumber;
-   document.getElementById('balance').innerText=balanceDeposit;
-   
+   const totalBalance = depositAmountNumber+balanceDisplayNumber;
+   document.getElementById('balance').innerText=totalBalance;
 })
