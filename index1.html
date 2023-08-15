@@ -11,11 +11,38 @@
     <header>
         <h1 class="text-6xl text-center font-extrabold "><span class="text-orange-600">Let's</span> Get <span class="text-orange-600">Money</span></h1>
     </header>
-    <main></main>
+    <main class="container mx-auto">
+         <div class="grid grid-cols-3 gap-10 mt-20">
+            <div class="bg-green-400 w-auto  p-12 rounded-xl">
+                 <h2 class="text-white text-4xl font-semibold">Deposit</h2>
+                 <h2 class="text-white text-4xl font-semibold">$ <span>00</span></h2>
+            </div>
+            <div class="bg-red-400 w-auto  p-12 rounded-xl">
+                 <h2 class="text-white text-4xl font-semibold">Withdraw</h2>
+                 <h2 class="text-white text-4xl font-semibold">$ <span>00</span></h2>
+            </div>
+            <div class="bg-yellow-400 w-auto  p-12 rounded-xl">
+                 <h2 class="text-white text-4xl font-semibold">Balance</h2>
+                 <h2 class="text-white text-4xl font-semibold">$ <span>00</span></h2>
+            </div>
+         </div>
+         <div class="grid grid-cols-2 gap-10 mt-10">
+            <div class="   bg-blue-400 rounded-xl p-10 space-y-3 mt-12">
+                <h2 class="text-white text-4xl font-semibold">Please Deposit</h2>
+               <input id="user-email"class="block w-9/12 rounded-sm pl-2 py-1" type="email" placeholder="$ Amount want to deposit">
+               <button  id="deposit-btn"class="text-white  font-bold bg-green-500 hover:bg-green-400 rounded-md px-10 py-2"type="submit">Deposit</button>
+            </div>
+            <div class="   bg-violet-400 rounded-xl p-10 space-y-3 mt-12">
+                <h2 class="text-white text-4xl font-semibold">Please Withdraw</h2>
+               <input id="user-email"class="block w-9/12 rounded-sm pl-2 py-1" type="email" placeholder="$ Amount want to withdraw">
+               <button  id="submit-btn"class="text-white  font-bold bg-red-500 hover:bg-red-400 rounded-md px-10 py-2"type="submit">Withdraw</button>
+            </div>
+         </div>
+    </main>
 
 
 
 
-
+  <script src="index1.js"></script>
 </body>
 </html>

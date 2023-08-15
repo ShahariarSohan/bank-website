@@ -1,3 +1,4 @@
+
  document.getElementById('submit-btn').addEventListener('click',function(){
     const userEmail =document.getElementById('user-email')
     console.log(userEmail.value);
