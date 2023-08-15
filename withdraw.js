@@ -2,6 +2,9 @@
 document.getElementById('withdraw-btn').addEventListener('click',function(){
    const withdrawAmountString = document.getElementById('withdraw-amount')
    const withdrawAmountNumber = parseFloat(withdrawAmountString.value);
+   if(isNaN(withdrawAmountNumber)){
+      return alert('Please enter valid amount')
+   }
    withdrawAmountString.value='';
    const withdrawDisplayString =document.getElementById('withdraw').innerText
    const withdrawDisplayNumber = parseFloat(withdrawDisplayString);
