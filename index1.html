@@ -15,11 +15,11 @@
          <div class="grid grid-cols-3 gap-10 mt-20">
             <div class="bg-green-400 w-auto  p-12 rounded-xl">
                  <h2 class="text-white text-4xl font-semibold">Deposit</h2>
-                 <h2 class="text-white text-4xl font-semibold">$ <span>00</span></h2>
+                 <h2 class="text-white text-4xl font-semibold">$ <span id="deposit">00</span></h2>
             </div>
             <div class="bg-red-400 w-auto  p-12 rounded-xl">
                  <h2 class="text-white text-4xl font-semibold">Withdraw</h2>
-                 <h2 class="text-white text-4xl font-semibold">$ <span>00</span></h2>
+                 <h2 class="text-white text-4xl font-semibold">$ <span id="withdraw">00</span></h2>
             </div>
             <div class="bg-yellow-400 w-auto  p-12 rounded-xl">
                  <h2 class="text-white text-4xl font-semibold">Balance</h2>
@@ -29,13 +29,13 @@
          <div class="grid grid-cols-2 gap-10 mt-10">
             <div class="   bg-blue-400 rounded-xl p-10 space-y-3 mt-12">
                 <h2 class="text-white text-4xl font-semibold">Please Deposit</h2>
-               <input id="user-email"class="block w-9/12 rounded-sm pl-2 py-1" type="email" placeholder="$ Amount want to deposit">
+               <input id="deposit-amount"class="block w-9/12 rounded-sm pl-2 py-1" type="email" placeholder="$ Amount want to deposit">
                <button  id="deposit-btn"class="text-white  font-bold bg-green-500 hover:bg-green-400 rounded-md px-10 py-2"type="submit">Deposit</button>
             </div>
             <div class="   bg-violet-400 rounded-xl p-10 space-y-3 mt-12">
                 <h2 class="text-white text-4xl font-semibold">Please Withdraw</h2>
-               <input id="user-email"class="block w-9/12 rounded-sm pl-2 py-1" type="email" placeholder="$ Amount want to withdraw">
-               <button  id="submit-btn"class="text-white  font-bold bg-red-500 hover:bg-red-400 rounded-md px-10 py-2"type="submit">Withdraw</button>
+               <input id="withdraw-amount"class="block w-9/12 rounded-sm pl-2 py-1" type="email" placeholder="$ Amount want to withdraw">
+               <button  id="withdraw-btn"class="text-white  font-bold bg-red-500 hover:bg-red-400 rounded-md px-10 py-2"type="submit">Withdraw</button>
             </div>
          </div>
     </main>
