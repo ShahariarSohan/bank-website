@@ -1,12 +1,7 @@
 // mouse click
 // withdraw
 document.getElementById('withdraw-btn').addEventListener('click',function(){
-   const withdrawAmountString = document.getElementById('withdraw-amount')
-   const withdrawAmountNumber = parseFloat(withdrawAmountString.value);
-   withdrawAmountString.value='';
-   if(isNaN(withdrawAmountNumber)){
-      return alert('Please enter valid amount')
-   }
+   
    const balanceDisplayString =document.getElementById('balance').innerText
    const balanceDisplayNumber = parseFloat(balanceDisplayString);
 //if anyone withdraw amount more than total balance
