@@ -9,6 +9,5 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
    const totalWithdraw = withdrawAmount+previousWithdraw;
    totalSetById('withdraw',totalWithdraw);
    const totalBalance = previousBalance - withdrawAmount;
-   console.log(previousBalance,totalBalance);
    totalSetById('balance',totalBalance);
 })
