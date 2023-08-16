@@ -1,6 +1,10 @@
 // mouse click
 document.getElementById('withdraw-btn').addEventListener('click',function(){
    const withdrawAmount = inputAmountById('withdraw-amount');
+   if(isNaN(withdrawAmount)){
+      return alert("Enter a valid amount");
+  }
+  else{
    const previousWithdraw = elementAmountById('withdraw')
    const previousBalance = elementAmountById('balance')
    if(withdrawAmount>previousBalance){
@@ -12,11 +16,16 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
    const totalBalance = previousBalance - withdrawAmount;
    totalSetById('balance',totalBalance);
    }
+  }
 })
 //Enter key press 
 document.getElementById('withdraw-amount').addEventListener('keyup',function(event){
    if(event.key==='Enter'){
       const withdrawAmount = inputAmountById('withdraw-amount')
+      if(isNaN(withdrawAmount)){
+         return alert("Enter a valid amount");
+     }
+     else{
       const previousWithdraw =elementAmountById('withdraw')
       const previousBalance = elementAmountById('balance')
       if(withdrawAmount>previousBalance){
@@ -28,5 +37,6 @@ document.getElementById('withdraw-amount').addEventListener('keyup',function(eve
          const totalBalance =previousBalance-withdrawAmount;
          totalSetById('balance',totalBalance);
       }
+     }
    }
 })

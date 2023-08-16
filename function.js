@@ -3,12 +3,8 @@
     const inputAmountString = document.getElementById(inputId)
     const inputAmount =parseFloat(inputAmountString.value);
     inputAmountString.value='';
-    if(isNaN(inputAmount)){
-        return alert("Enter valid amount");
-    }
-    else{
-        return inputAmount;
-    }
+    return inputAmount;
+    
 }
 // element amount
 function elementAmountById(elementId){
