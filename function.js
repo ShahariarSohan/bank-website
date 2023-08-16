@@ -1,4 +1,4 @@
-//  input
+//  input amount
  function inputAmountById(inputId){
     const inputAmountString = document.getElementById(inputId)
     const inputAmount =parseFloat(inputAmountString.value);
@@ -10,14 +10,13 @@
         return inputAmount;
     }
 }
-// element 
+// element amount
 function elementAmountById(elementId){
     const elementAmountString =document.getElementById(elementId).innerText
     const elementAmount = parseFloat(elementAmountString);
     return elementAmount;
+}
+function totalSetById(elementId,newValue){
+    document.getElementById(elementId).innerText=newValue;
+}
 
-}
-function totalDepositWithdraw(inputAmount,elementAmount){
-    const addOrSub = inputAmount+elementAmount;
-    return addOrSub;
-}
