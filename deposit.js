@@ -2,9 +2,9 @@
 document.getElementById('deposit-btn').addEventListener('click',function(){
      const depositInput = inputAmountById('deposit-amount')
      const previousDeposit = elementAmountById('deposit')
-     const depositTotal = depositInput+previousDeposit;
-     totalSetById('deposit',depositTotal);
-     const balance =elementAmountById('balance')
-     const balanceTotal =depositInput+balance;
+     const totalDeposit = depositInput+previousDeposit;
+     totalSetById('deposit',totalDeposit)
+     const previousBalance =elementAmountById('balance')
+     const balanceTotal =depositInput+previousBalance;
      totalSetById('balance',balanceTotal);
 })

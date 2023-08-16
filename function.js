@@ -15,6 +15,7 @@ function elementAmountById(elementId){
     const elementAmountString =document.getElementById(elementId).innerText
     const elementAmount = parseFloat(elementAmountString);
     return elementAmount;
+    
 }
 function totalSetById(elementId,newValue){
     document.getElementById(elementId).innerText=newValue;
